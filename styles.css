@@ -291,3 +291,12 @@ input:focus,select:focus,textarea:focus{border-color:rgba(240,138,26,.55);box-sh
   .how{ grid-template-columns: 1fr; }
   .how__card{ padding: 14px; }
 }
+
+
+@media(max-width: 760px){
+  .hero__content{
+    background-size: 135% auto;
+    background-position: center top;
+    padding: 28px;
+  }
+}
