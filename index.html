@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Remimacc | Renta de Maquinaria Industrial</title>
+  <meta name="description" content="Remimacc ofrece alquiler de maquinaria industrial. Entrega rápida, equipos confiables y atención personalizada." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__item">📍 <strong>Zona: Mexico</strong> [Ocotlan / Jalisco]</span>
+      <span class="topbar__item">⏱️ <strong>Horario:</strong> Lun–Sáb 8:00–18:00</span>
+      <a class="topbar__item link" href="tel:+52 3921595505">📞 +52 392 159 5505</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="inicio">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Remimacc - Inicio">
+        <img src="logo.png" class="brand__logo" alt="Remimacc logo" />
+        <div class="brand__text">
+          <span class="brand__name">REMIMACC</span>
+          <span class="brand__tag">Renta de maquinaria industrial</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav__list" id="navList">
+          <li><a href="#servicios">Equipos</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#por-que">Por qué Remimacc</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn--small" href="#contacto">Contactar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="pill">Disponibilidad rápida • Equipos confiables • Atención directa</div>
+          <h1>Alquiler de maquinaria industrial para tus proyectos</h1>
+          <p class="lead">
+            En <strong>Remimacc</strong> te ayudamos a avanzar sin demoras: cotización rápida, opciones por día/semana/mes y soporte durante el alquiler.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" id="whatsappHero" href="#" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+            <a class="btn btn--ghost" href="#servicios">Ver equipos</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__num">+24h</span>
+              <span class="stat__text">Respuesta rápida</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">Flexible</span>
+              <span class="stat__text">Día / Semana / Mes</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">Soporte</span>
+              <span class="stat__text">Asistencia durante el alquiler</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="hero__cardTop">
+            <h3>Pedí tu cotización</h3>
+            <p>Contanos qué necesitás y te respondemos con disponibilidad y precio.</p>
+          </div>
+
+          <form class="form" id="quoteForm">
+            <label>
+              Nombre
+              <input type="text" name="name" placeholder="Tu nombre" required>
+            </label>
+            <label>
+              Equipo / Servicio
+              <input type="text" name="equipment" placeholder="Ej: elevador, generador, excavadora" required>
+            </label>
+            <label>
+              Duración
+              <select name="duration" required>
+                <option value="" selected disabled>Elegí una opción</option>
+                <option>Por día</option>
+                <option>Por semana</option>
+                <option>Por mes</option>
+                <option>A definir</option>
+              </select>
+            </label>
+            <label>
+              Zona / Obra
+              <input type="text" name="location" placeholder="Ej: Los Ángeles / Santa Clarita" required>
+            </label>
+            <button class="btn btn--block" type="submit">Enviar por WhatsApp</button>
+
+            <p class="form__hint">
+              Al enviar, se abre WhatsApp con el mensaje armado (vos lo confirmás).
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section__head">
+          <h2>Equipos disponibles</h2>
+          <p>Armamos la opción ideal según tu obra, acceso y tiempos.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon">🏗️</div>
+            <h3>Plataformas elevadoras</h3>
+            <p>Altura segura para mantenimiento, montaje y construcción.</p>
+            <ul class="list">
+              <li>Tijera / Brazo articulado</li>
+              <li>Interior / Exterior</li>
+              <li>Entrega programada</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">🚜</div>
+            <h3>Excavación y movimiento</h3>
+            <p>Potencia para tierra, zanjeo y preparación de terreno.</p>
+            <ul class="list">
+              <li>Mini excavadoras</li>
+              <li>Cargadores</li>
+              <li>Accesorios según tarea</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">⚡</div>
+            <h3>Energía y obra</h3>
+            <p>Soluciones para obra temporal y eventos industriales.</p>
+            <ul class="list">
+              <li>Generadores</li>
+              <li>Iluminación de obra</li>
+              <li>Cables / accesorios</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">🧱</div>
+            <h3>Andamios y equipos</h3>
+            <p>Apoyo completo para trabajos en altura y logística.</p>
+            <ul class="list">
+              <li>Andamios modulares</li>
+              <li>Compresores / herramientas</li>
+              <li>Asesoramiento</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="banner">
+          <div>
+            <h3>¿No ves el equipo que buscás?</h3>
+            <p>Decinos qué necesitás y te lo conseguimos o te damos alternativa equivalente.</p>
+          </div>
+          <a class="btn" id="whatsappServices" href="#" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section--alt" id="como-funciona">
+      <div class="container">
+        <div class="section__head">
+          <h2>Cómo funciona</h2>
+          <p>Simple, rápido y sin vueltas.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <span class="step__num">1</span>
+            <h3>Nos escribís</h3>
+            <p>Equipo, zona y tiempo de alquiler.</p>
+          </div>
+          <div class="step">
+            <span class="step__num">2</span>
+            <h3>Cotizamos</h3>
+            <p>Confirmamos disponibilidad, precio y condiciones.</p>
+          </div>
+          <div class="step">
+            <span class="step__num">3</span>
+            <h3>Entregamos</h3>
+            <p>Coordinamos entrega/retiro según tu obra.</p>
+          </div>
+          <div class="step">
+            <span class="step__num">4</span>
+            <h3>Soporte</h3>
+            <p>Te acompañamos durante el alquiler.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why us -->
+    <section class="section" id="por-que">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2>Por qué elegir Remimacc</h2>
+            <p class="lead2">
+              Priorizamos disponibilidad real, equipos en condiciones y una atención clara para que tu obra no se frene.
+            </p>
+
+            <div class="checks">
+              <div class="check">✅ Atención directa y rápida</div>
+              <div class="check">✅ Opciones flexibles de alquiler</div>
+              <div class="check">✅ Equipos revisados antes de entregar</div>
+              <div class="check">✅ Coordinación simple de entrega/retiro</div>
+            </div>
+
+            <div class="mini">
+              <div class="mini__box">
+                <h3>Testimonios</h3>
+                <p class="muted">“Buen servicio y entrega a tiempo.”</p>
+                <p class="muted">“Equipos impecables, recomendables.”</p>
+              </div>
+              <div class="mini__box">
+                <h3>Para empresas y particulares</h3>
+                <p class="muted">Obras, mantenimiento, eventos y más.</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="quote">
+            <h3>Contacto rápido</h3>
+            <p>Si ya sabés qué equipo necesitás, te respondemos por WhatsApp.</p>
+            <a class="btn btn--block" id="whatsappAside" href="#" target="_blank" rel="noopener">Cotizar ahora</a>
+            <div class="quote__divider"></div>
+            <p class="muted small">
+              O llamanos: <a class="link" href="tel:+52 3921595505">+52 3921595505</a><br>
+              Email: <a class="link" href="mailto:contacto@remimacc.com">contacto@remimacc.com</a>
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2>Preguntas frecuentes</h2>
+          <p>Lo más común antes de alquilar.</p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>¿Qué necesito para alquilar?</summary>
+            <p>Normalmente: datos de contacto, ubicación de obra, tiempo de alquiler y disponibilidad para entrega/retiro. (Podés ajustar esto según tus requisitos reales.)</p>
+          </details>
+
+          <details>
+            <summary>¿Hacen entrega y retiro?</summary>
+            <p>Sí, coordinamos logística según zona y tipo de equipo. También podés retirar (si aplica).</p>
+          </details>
+
+          <details>
+            <summary>¿Alquilan por día/semana/mes?</summary>
+            <p>Sí. También armamos planes “a medida” si el proyecto lo necesita.</p>
+          </details>
+
+          <details>
+            <summary>¿Qué pasa si necesito extender?</summary>
+            <p>Nos avisás y extendemos según disponibilidad. Se ajusta el costo según el plan.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contacto</h2>
+          <p>Respondemos rápido. Decinos qué necesitás y en qué zona.</p>
+        </div>
+
+        <div class="contact">
+          <div class="contact__card">
+            <h3>Datos</h3>
+            <p><strong>WhatsApp:</strong> <a class="link" id="whatsappText" href="#" target="_blank" rel="noopener">+52 3921595505</a></p>
+            <p><strong>Tel:</strong> <a class="link" href="tel:+52 3921595505">+52 3921595505</a></p>
+            <p><strong>Email:</strong> <a class="link" href="mailto:contacto@remimacc.com">contacto@remimacc.com</a></p>
+            <p><strong>Zona:</strong> [Ocotlan / Jalisco] Mexico</p>
+
+            <div class="mapPlaceholder" aria-label="Mapa (placeholder)">
+              <span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59857.262919655645!2d-102.80823242942321!3d20.33835762256817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842ed8dac7c46fef%3A0x312062e6d2b2e7f!2zT2NvdGzDoW4sIEphbC4sIE3DqXhpY28!5e0!3m2!1ses-419!2sus!4v1768629570726!5m2!1ses-419!2sus" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></span>
+            </div>
+          </div>
+
+          <div class="contact__card">
+            <h3>Mensaje rápido</h3>
+            <form id="contactForm" class="form">
+              <label>
+                Nombre
+                <input type="text" name="name" placeholder="Tu nombre" required>
+              </label>
+              <label>
+                Mensaje
+                <textarea name="message" rows="5" placeholder="Ej: Necesito plataforma tijera por 3 días en [zona]" required></textarea>
+              </label>
+              <button class="btn btn--block" type="submit">Enviar por WhatsApp</button>
+              <p class="form__hint">Se abre WhatsApp con el texto listo.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__brand">REMIMACC</div>
+        <div class="footer__muted">Renta de maquinaria industrial</div>
+      </div>
+
+      <div class="footer__links">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Equipos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div class="footer__muted small">
+        © <span id="year"></span> Remimacc. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a class="wabtn" id="whatsappFloat" href="#" target="_blank" rel="noopener" aria-label="Cotizar por WhatsApp">
+    💬
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
