@@ -295,7 +295,8 @@ input:focus,select:focus,textarea:focus{border-color:rgba(240,138,26,.55);box-sh
 
 @media(max-width: 760px){
   .hero__content{
-    background-size: 115% auto;
-    background-position: 115% auto;
-      }
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 }
