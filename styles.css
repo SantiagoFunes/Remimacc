@@ -199,3 +199,95 @@ input:focus,select:focus,textarea:focus{border-color:rgba(240,138,26,.55);box-sh
 .mapPlaceholder iframe{
   border-radius: 16px;
 }
+
+
+/* =========================
+   COMO FUNCIONA (cards)
+   ========================= */
+.how{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.how__card{
+  background: rgba(255,255,255,.82);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 10px 26px rgba(0,0,0,.05);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.how__card::before{
+  content:"";
+  position:absolute;
+  inset: 0;
+  background: radial-gradient(420px 220px at 20% 10%, rgba(240,138,26,.18), transparent 60%);
+  pointer-events:none;
+  opacity: .9;
+}
+
+.how__card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(240,138,26,.28);
+  box-shadow: 0 14px 34px rgba(0,0,0,.08);
+}
+
+.how__top{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 10px;
+  position: relative;
+}
+
+.how__icon{
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display:grid;
+  place-items:center;
+  background: rgba(240,138,26,.16);
+  border: 1px solid rgba(240,138,26,.22);
+  font-size: 20px;
+}
+
+.how__step{
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(16,19,21,.60);
+  background: rgba(255,255,255,.70);
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  border-radius: 999px;
+}
+
+.how__title{
+  margin: 12px 0 8px;
+  font-size: 18px;
+  letter-spacing: -.01em;
+  position: relative;
+}
+
+.how__text{
+  margin: 0;
+  color: rgba(16,19,21,.75);
+  line-height: 1.55;
+  position: relative;
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .how{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px){
+  .how{ grid-template-columns: 1fr; }
+  .how__card{ padding: 14px; }
+}
